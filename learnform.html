@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<head>
+<title>Learn With Us</title>
+	<script src="https://kit.fontawesome.com/46ccd809fe.js" crossorigin="anonymous"></script>
+	<style>
+		body{
+			margin:0px;
+			padding:0px;
+			background-image:url(baaa.jpg);
+			background-repeat:no-repeat;
+			background-size:cover;}
+		header{
+			background:#333;
+			height:66px;
+			}
+		header *{color:white;}
+		header .logo{
+			float:left;
+			height:inherit;
+			margin-left:2em;
+		}
+		header .logo-text{
+			margin:9px;
+		}
+		header ul{
+			float:right;
+			margin:0px;
+			padding:0px;
+			list-style:none;
+			
+		}
+		header ul li{
+			float:left;
+			position:relative;
+		}
+		header ul li a{
+			display:block;
+			padding:21px;
+			font-size:1.1em;
+			text-decoration:none;
+		}
+		header ul li ul{
+			position:absolute;
+			top:66px;
+			right:0px;
+			width:180px;
+			display:none;
+		}
+		header ul li:hover ul{
+			display:block;
+		}
+		header ul li ul li{
+			width:100%;
+		}
+		header ul li ul li a{
+			padding:10px;
+			color:black;
+			background-color:#f9f9f9;
+		}
+		header ul li ul li a:hover{
+			background-color:#f1f1f1;
+			
+		}
+		header ul li a:hover{
+			background-color:#111;
+			transition:0.5s;
+		}
+		
+		header .menu-toggle{
+			display:none;
+			}
+		* {
+			box-sizing: border-box;
+		}
+		@media only screen and (max-width:750px){
+			header{
+				position:relative;
+			}
+			header ul{
+				width:100%;
+				background-color:#333;
+				max-height:0px;
+				overflow:hidden;
+			}
+			.showing{
+				max-height:100em;
+			}
+			header ul li{
+				width:100%;
+			}
+			header ul li ul{
+				position:static;
+				display:block;
+				width:100%;
+			}
+			header ul li ul li a{
+				background-color:#333;
+				padding:10px;
+				color:white;
+				padding-left:50px;
+			}
+			header .menu-toggle{
+				display:block;
+				position:absolute;
+				right:20px;
+				top:20px;
+				font-size:1.9em;
+			}
+			header .logo{
+				margin-left:.8em;
+			}
+			iframe{
+				width:100%;
+			}
+
+		}
+input[type=text]{
+font-style:italic;
+border-left:5px solid red;
+border-right:none;
+border-top:none;
+}
+input[type=email]{
+font-style:italic;
+border-left:5px solid red;
+border-right:none;
+border-top:none;
+}
+p{border-left:5px solid red;
+border-right:none;
+border-top:none;
+
+}
+select{
+font-style:italic;
+border-left:5px solid red;
+border-right:none;
+border-top:none;
+}
+/*body{
+background:url(back1.jpg);
+background-size:cover;
+}*/
+.container{
+width:50%;
+height:800px;
+background:#fff;
+margin:0 auto;
+border: 2px solid #fff;
+}
+.container .left{
+float:left;
+width:50%;
+height:800px;
+background:url(back3.jpg);
+background-size:cover;
+box-sizing:border-box;
+}
+.container .right{
+float:right;
+width:250px;
+height:800px;
+box-sizing:border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  /*height: 300px;*/ /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a{text-decoration:none;}
+  .column{height:175px;}
+  h2{color:white; font-size:18px;}
+  h2 a{color:white; font-size:18px;}
+  .pp{color:white; border:0; font-size:18px;}
+  .pp a{color:#ffffff; border:0; font-size:18px}
+      body{background-image:url(baaaa.png);
+  background-repeat:no-repeat;
+  background-size:cover;}
+</style>
+
+
+</head>
+<body>
+<header>
+		<div class='logo'>
+			<h1>Chandini Cchabria Makeovers</h1>
+		</div>
+		<i class='fa fa-bars menu-toggle'></i>
+		<ul class='nav'>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='portfolio1.html'>Portfolio</a></li>
+			<li><a href='contactusofglam'>Contact Us</a></li>
+			<li><a href='login.html'>Login</a></li>
+			<li>
+				<a href='#'>Join Us 
+					<i class='fa fa-chevron-down' font-size:'.8em'></i></a>
+				<ul style='left:0px'>
+					<li><a href='learn.html'>Learn with Us</a></li>
+					<li><a href='workform.html'>Work with Us</a></li>
+					<li><a href='glam.html'>Glam Up with Us</a></li>
+				</ul>
+			</li>
+
+			
+	</header>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function(){
+			$('.menu-toggle').on('click',function(){
+				$('.nav').toggleClass('showing');
+				$('.nav ul').toggleClass('showing');
+			});
+		});
+	</script>
+<br>
+<div class='title'>
+<h1 align='center'>Learn With Us</h1>
+</div>
+<div class='container'>
+<div class='left'></div>
+<div class='right'>
+<div class='formbox'>
+<form name='f1' action='learnform.php' method='post'>
+<fieldset>
+<legend>Personal Details</legend>
+<br>
+<input type='text' placeholder='First Name' name='t1' size='50px'>
+<br><br>
+<input type='text' placeholder='Middle Name' name='t2' size='50px'>
+<br><br>
+<input type='text' placeholder='Last Name' name='t3' size='50px'>
+<br><br>
+<input type='text' placeholder='Address' name='t4' size='50px'>
+<br><br>
+<select>
+  <option value='Gender' selected>Gender</option>
+  <option value='male'>Male</option>
+  <option value='female'>Female</option>
+  <option value='others'>Others</option>
+</select>
+<br><br>
+<input type='text' placeholder='Phone Number' name='t5' size='50px'></p>
+<input type='email' placeholder='Email' name='t6' size='50px'>
+<br><br>
+<p>DOB <input type='date' size='20px'></p>
+<br>
+</fieldset>
+<br><!--
+<fieldset>
+<legend>Previous Experience</legend>
+<p>Do you have previous experience? <input type='checkbox' value='yes' id='check1'>Yes
+<input type='checkbox'>No</p> <br>
+<input type='text' value='Level of the course' size='50px'>
+<br><br>
+<select>
+  <option value='Duration' selected>Duration</option>
+  <option value='15day'>15 days</option>
+  <option value='1mon'>One Month</option>
+  <option value='3mon'>Three Months</option>
+</select>
+<br>
+</fieldset>-->
+<br>
+<fieldset>
+<legend>Choose your Package</legend>
+<p>Hair Styling <input type='checkbox' class='level1' value='level 1' name='hair[]'>Level 1<br>&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+&nbsp  &nbsp &nbsp <input class='level1' type='checkbox' name='hair[]' value='level 2'>Level 2</p>
+<p>Make-up Course<input type='checkbox' class='level1' name='makeup[]' value='basic'>Basic<br>&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ &nbsp &nbsp  &nbsp &nbsp <input type='checkbox' class='level1' name='makeup[]' value='advanced'>Advanced</p> <br>
+<div id='x'></div>
+</fieldset>
+<br>
+<input type='submit' value='Submit'>
+</form>
+</div>
+</div>
+</div>
+<br>
+<div class='footer'>
+  <div class="column" style='background-color:#333;'>
+  <br>
+    <h2><a href='index.html'>Chandni Cchabria Makeovers</a></h2>
+    <p class='pp'>Address</p>
+	<br>
+	<br>
+  </div>
+  <div class="column" style='background-color:#333;'>
+  <br>
+    <p class='pp'><a href='index.html'>About Us</a></p>
+    <p class='pp'><a href='portfolio1.html'>Portfolio</p>
+	<p class='pp'><a href='contactusofglam.html'>Contact Us</a></p>
+  </div>
+  <div class="column" style='background-color:#333;' >
+    <h2>Join Us</h2>
+    <p class='pp'><a href='learn.html'>Learn With Us</a></p>
+	<p class='pp'><a href='workform.html'>Work With Us</a></p>
+	<p class='pp'><a href='glam.html'>Glam Up With Us</a></p>
+  </div>
+</div>
+</body>
+</html>
